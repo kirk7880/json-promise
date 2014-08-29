@@ -1,11 +1,11 @@
 {
   "name": "json-parse-promise",
   "version": "1.0.0",
-  "description": "Promise for parsing JSON to ensure errors are handled properly.",
-  "main": "server.js",
+  "description": "Promise based JSON parser. Handles invalid JSON data gracefully.",
+  "main": "index.js",
+  "repository": "git://github.com/kirk7880/json-parse-promise",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js" 
+    "test": "node_modules/mocha/bin/mocha"
   },
   "dependencies": {
     "bluebird": "*"
@@ -13,6 +13,11 @@
   "devDependencies": {
     "mocha": "1.x.x"
   },
-  "author": "",
+  "keywords": [
+    "trend"
+    ,"trends"
+    ,"trending"
+  ],
+  "author": "Kirk Gordon<kirk7880@gmail.com>",
   "license": "MIT"
 }
