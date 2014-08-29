@@ -64,3 +64,6 @@ parser.stringify(obj)
 		// the data is corrupted!
 	});
 ```
+
+### Testing
+npm test
