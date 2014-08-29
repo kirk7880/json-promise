@@ -21,10 +21,10 @@ var str = [
 ].join('');
 
 json.parse(str)
-	.then(function(obj) {
+	.then(function onParse(obj) {
 		// do something with the data object
 	})
-	.catch(function(e) {
+	.catch(function onParseError(e) {
 		// the data is corrupted!
 	});
 ```
@@ -56,10 +56,10 @@ var obj = {
 };
 
 json.stringify(obj)
-	.then(function(obj) {
+	.then(function onStringify(obj) {
 		// do something with the string
 	})
-	.catch(function(e) {
+	.catch(function onStringifyError(e) {
 		// the data is corrupted!
 	});
 ```
