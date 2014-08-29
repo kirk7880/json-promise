@@ -7,8 +7,7 @@ exports.parse = function(data) {
     if (typeof data === (typeof {})) {
       return resolve(data);
     }
-    
-    // if error, reject is called!
+
     resolve(JSON.parse(data))
   });
 };
@@ -19,7 +18,6 @@ exports.stringify = function(data) {
       return resolve(data);
     } 
 
-    // if error, reject is called!
     resolve(JSON.stringify(data));
   });
 };

@@ -1,6 +1,6 @@
 {
   "name": "json-promise",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Promise based JSON parser. Handles invalid JSON data gracefully.",
   "main": "index.js",
   "repository": "git://github.com/kirk7880/json-promise",
