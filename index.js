@@ -8,11 +8,8 @@ exports.parse = function(data) {
       return resolve(data);
     }
     
-    try {
-      return resolve(JSON.parse(data))
-    } catch (e) {
-      return reject(e);
-    }
+    // if error, reject is called!
+    resolve(JSON.parse(data))
   });
 };
 
@@ -22,10 +19,7 @@ exports.stringify = function(data) {
       return resolve(data);
     } 
 
-    try {
-      return resolve(JSON.stringify(data));
-    } catch (e) {
-      return reject(e);
-    }
+    // if error, reject is called!
+    resolve(JSON.stringify(data));
   });
 };
