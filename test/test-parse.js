@@ -3,7 +3,7 @@
 var parser = require('../index');
 var validObject = require(__dirname + '/fixtures/valid-object');
 var validString = require(__dirname + '/fixtures/valid-string');
-var invalid = require(__dirname + '/fixtures/invalid-string');
+var invalidString = require(__dirname + '/fixtures/invalid-string');
 var assert = require("assert");
 
 describe('parser.parse', function(){
@@ -18,7 +18,7 @@ describe('parser.parse', function(){
   });
 
   it('invalid should should be a string', function(done){
-    assert.equal(typeof "", typeof invalid);
+    assert.equal(typeof "", typeof invalidString);
     done();
   });
 
@@ -41,8 +41,8 @@ describe('parser.parse', function(){
   });
 
 
-  it('should not parse the data that is invalid', function(done){
-    parser.parse(invalid).then(function(data) {
+  it('should not parse json data that is invalid', function(done){
+    parser.parse(invalidString).then(function(data) {
       throw new Error('This test should have failed!');
     }).catch(function(e) {
       assert.equal(true, e instanceof Error);
