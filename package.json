@@ -1,6 +1,6 @@
 {
   "name": "json-parse-promise",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Promise for parsing JSON to ensure errors are handled properly.",
   "main": "server.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "bluebird": "*"
   },
   "devDependencies": {
-    "mocha": "~1.x.x"
+    "mocha": "1.x.x"
   },
   "author": "",
   "license": "MIT"
