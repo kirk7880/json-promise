@@ -6,13 +6,13 @@ examples below for usage instructions. This module use [bluebird](https://github
 for [Promise/A+](http://promisesaplus.com) support.
 
 ## Installation
-npm install [json-parse-promise](https://www.npmjs.org/package/json-promise)
+npm install [json-promise](https://www.npmjs.org/package/json-promise)
 
 ## Usage Instructions
 
 ### Parsing JSON data
 ```javascript
-var parser = require('json-parse-promise');
+var json = require('json-promise');
 var str = [
 	'{"menu":{"id":"file","value":"File","popup":' 
 	,'{"menuitem":[{"value":"New","onclick":"CreateNewDoc()"},' 
@@ -20,7 +20,7 @@ var str = [
 	,'"onclick":"CloseDoc()"}]}}}'
 ].join('');
 
-parser.parse(str)
+json.parse(str)
 	.then(function(obj) {
 		// do something with the data object
 	})
@@ -31,7 +31,7 @@ parser.parse(str)
 
 ### Stringify JSON data
 ```javascript
-var parser = require('json-parse-promise');
+var json = require('json-promise');
 var obj = {
   "menu": {
     "id": "file",
@@ -55,7 +55,7 @@ var obj = {
   }
 };
 
-parser.stringify(obj)
+json.stringify(obj)
 	.then(function(obj) {
 		// do something with the string
 	})
