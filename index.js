@@ -3,14 +3,13 @@
 var Promise = require('bluebird');
 
 exports.parse = function(data) {
-  var _data = data;
   return new Promise(function parse(resolve, reject) {
-    if (typeof _data === (typeof {})) {
-      return resolve(_data);
+    if (typeof data === (typeof {})) {
+      return resolve(data);
     }
     
     try {
-      return resolve(JSON.parse(_data))
+      return resolve(JSON.parse(data))
     } catch (e) {
       return reject(e);
     }
@@ -18,14 +17,13 @@ exports.parse = function(data) {
 };
 
 exports.stringify = function(data) {
-  var _data = data;
   return new Promise(function stringify(resolve, reject) {
-    if (typeof _data === (typeof '')) {
-      return resolve(_data);
+    if (typeof data === (typeof '')) {
+      return resolve(data);
     } 
 
     try {
-      return resolve(JSON.stringify(_data));
+      return resolve(JSON.stringify(data));
     } catch (e) {
       return reject(e);
     }
