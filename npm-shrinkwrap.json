@@ -1,6 +1,6 @@
 {
-  "name": "json-parse-promise",
-  "version": "0.0.1",
+  "name": "json-promise",
+  "version": "1.0.3",
   "dependencies": {
     "bluebird": {
       "version": "2.2.2",
