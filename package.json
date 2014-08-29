@@ -1,6 +1,6 @@
 {
   "name": "json-parse-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promise based JSON parser. Handles invalid JSON data gracefully.",
   "main": "index.js",
   "repository": "git://github.com/kirk7880/json-parse-promise",
@@ -14,9 +14,10 @@
     "mocha": "1.x.x"
   },
   "keywords": [
-    "trend"
-    ,"trends"
-    ,"trending"
+    "json"
+    ,"parse"
+    ,"stringify"
+    ,"promise"
   ],
   "author": "Kirk Gordon<kirk7880@gmail.com>",
   "license": "MIT"
