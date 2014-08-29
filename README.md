@@ -13,7 +13,7 @@ npm install [json-parse-promise](https://www.npmjs.org/package/json-parse-promis
 
 ### Parsing JSON data
 ```javascript
-var parser = require('../index');
+var parser = require('json-parse-promise');
 var str = [
 	'{"menu":{"id":"file","value":"File","popup":' 
 	,'{"menuitem":[{"value":"New","onclick":"CreateNewDoc()"},' 
@@ -32,7 +32,7 @@ parser.parse(str)
 
 ### Stringify JSON data
 ```javascript
-var parser = require('../index');
+var parser = require('json-parse-promise');
 var obj = {
   "menu": {
     "id": "file",
