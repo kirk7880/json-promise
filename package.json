@@ -1,9 +1,9 @@
 {
-  "name": "json-parse-promise",
-  "version": "1.0.4",
+  "name": "json-promise",
+  "version": "1.0.2",
   "description": "Promise based JSON parser. Handles invalid JSON data gracefully.",
   "main": "index.js",
-  "repository": "git://github.com/kirk7880/json-parse-promise",
+  "repository": "git://github.com/kirk7880/json-promise",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha"
   },
