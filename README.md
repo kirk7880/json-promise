@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/kirk7880/json-promise/badge.png)](https://coveralls.io/r/kirk7880/json-promise)
+
 ## Introduction
 
 Parse and stringify JSON data using promise to gracefully 
