@@ -1,5 +1,7 @@
-/*jshint unused:false */
+/* jshint unused:false */
+
 'use strict';
+
 var JSONPromise = require('bluebird');
 
 exports.parse = function(data) {
