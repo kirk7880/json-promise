@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kirk7880/json-promise.svg?branch=master)](https://travis-ci.org/kirk7880/json-promise) [![Coverage Status](https://coveralls.io/repos/kirk7880/json-promise/badge.png)](https://coveralls.io/r/kirk7880/json-promise)
+[![Build Status](https://travis-ci.org/kirk7880/json-promise.svg?branch=master)](https://travis-ci.org/kirk7880/json-promise) [![Coverage Status](https://coveralls.io/repos/kirk7880/json-promise/badge.png?branch=master)](https://coveralls.io/r/kirk7880/json-promise?branch=master)
 
 ## Introduction
 
