@@ -1,4 +1,11 @@
+#JSON-PROMISE
+
+## Status
+
 [![Build Status](https://travis-ci.org/kirk7880/json-promise.svg?branch=master)](https://travis-ci.org/kirk7880/json-promise) [![Coverage Status](https://coveralls.io/repos/kirk7880/json-promise/badge.png?branch=master)](https://coveralls.io/r/kirk7880/json-promise?branch=master)
+
+## NPM Stats
+https://nodei.co/kirk7880/json-promise.png?months=3
 
 ## Introduction
 
