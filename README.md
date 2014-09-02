@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/kirk7880/json-promise/badge.png)](https://coveralls.io/r/kirk7880/json-promise)
+[![Build Status][travis-image]][travis-url] [![Coverage Status](https://coveralls.io/repos/kirk7880/json-promise/badge.png)](https://coveralls.io/r/kirk7880/json-promise)
 
 ## Introduction
 
