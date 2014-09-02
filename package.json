@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "bluebird": "*",
-    "mocha-lcov-reporter": "0.0.1"
   },
   "devDependencies": {
     "mocha": "1.x.x",
