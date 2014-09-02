@@ -5,22 +5,25 @@
   "main": "index.js",
   "repository": "git://github.com/kirk7880/json-promise",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha",
-    "posttest":"istanbul cover --report html node_modules/mocha/bin/_mocha -- -R spec"
+    "test": "make test"
   },
   "dependencies": {
-    "bluebird": "*"
+    "bluebird": "*",
+    "mocha-lcov-reporter": "0.0.1"
   },
   "devDependencies": {
     "mocha": "1.x.x",
     "istanbul": "*",
-    "mocha-istanbul": "*"
+    "mocha-istanbul": "*",
+    "coveralls": "*",
+    "mocha-lcov-reporter": "*",
+    "jshint": "*"
   },
   "keywords": [
-    "json"
-    ,"parse"
-    ,"stringify"
-    ,"promise"
+    "json",
+    "parse",
+    "stringify",
+    "promise"
   ],
   "author": "Kirk Gordon<kirk7880@gmail.com>",
   "license": "MIT"

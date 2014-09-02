@@ -8,7 +8,7 @@ exports.parse = function(data) {
       return resolve(data);
     }
 
-    resolve(JSON.parse(data))
+    resolve(JSON.parse(data));
   });
 };
 

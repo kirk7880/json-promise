@@ -42,7 +42,7 @@ describe('parser.parse', function(){
 
 
   it('should not parse json data that is invalid', function(done){
-    parser.parse(invalidString).then(function(data) {
+    parser.parse(invalidString).then(function() {
       throw new Error('This test should have failed!');
     }).catch(function(e) {
       assert.equal(true, e instanceof Error);

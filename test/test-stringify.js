@@ -24,7 +24,7 @@ describe('parser.stringify', function(){
 
   it('should return JSON string from a JSON object', function(done){
     parser.stringify(validObject).then(function(data) {
-      assert.equal((typeof ''), typeof data);
+      assert.equal((typeof ""), typeof data);
       done();
     }).catch(function(e) {
       throw e;
@@ -33,7 +33,7 @@ describe('parser.stringify', function(){
 
   it('should return JSON string that is already a JSON string', function(done){
     parser.stringify(validString).then(function(data) {
-      assert.equal((typeof ''), typeof data);
+      assert.equal((typeof ""), typeof data);
       done();
     }).catch(function(e) {
       throw e;
@@ -42,7 +42,7 @@ describe('parser.stringify', function(){
 
 
   it('should not stringify json data that is invalid', function(done){
-    parser.stringify(invalidString).then(function(data) {
+    parser.stringify(invalidString).then(function() {
       throw new Error('This test should have failed!');
     }).catch(function(e) {
       assert.equal(true, e instanceof Error);
