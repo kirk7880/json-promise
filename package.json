@@ -8,7 +8,8 @@
     "test": "make test"
   },
   "dependencies": {
-    "bluebird": "*"
+    "bluebird": "*",
+    "mocha-lcov-reporter": "0.0.1"
   },
   "devDependencies": {
     "mocha": "1.x.x",
@@ -19,10 +20,10 @@
     "jshint": "*"
   },
   "keywords": [
-    "json"
-    ,"parse"
-    ,"stringify"
-    ,"promise"
+    "json",
+    "parse",
+    "stringify",
+    "promise"
   ],
   "author": "Kirk Gordon<kirk7880@gmail.com>",
   "license": "MIT"
