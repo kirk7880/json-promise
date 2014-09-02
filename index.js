@@ -1,9 +1,11 @@
+/* jshint unused:false */
+
 'use strict';
 
-var Promise = require('bluebird');
+var JSONPromise = require('bluebird');
 
 exports.parse = function(data) {
-  return new Promise(function parse(resolve, reject) {
+  return new JSONPromise(function parse(resolve, reject) {
     if (typeof data === (typeof {})) {
       return resolve(data);
     }
@@ -13,7 +15,8 @@ exports.parse = function(data) {
 };
 
 exports.stringify = function(data) {
-  return new Promise(function stringify(resolve, reject) {
+
+  return new JSONPromise(function stringify(resolve, reject) {
     if (typeof data === (typeof '')) {
       return resolve(data);
     } 

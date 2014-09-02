@@ -1,6 +1,6 @@
 {
   "name": "json-promise",
-  "version": "1.0.8",
+  "version": "1.1.8",
   "description": "Promise based JSON parser. Handles invalid JSON data gracefully.",
   "main": "index.js",
   "repository": "git://github.com/kirk7880/json-promise",
@@ -8,8 +8,7 @@
     "test": "make test"
   },
   "dependencies": {
-    "bluebird": "*",
-    "mocha-lcov-reporter": "0.0.1"
+    "bluebird": "*"
   },
   "devDependencies": {
     "mocha": "1.x.x",
@@ -17,7 +16,7 @@
     "mocha-istanbul": "*",
     "coveralls": "*",
     "mocha-lcov-reporter": "*",
-    "jshint": "*"
+    "jshint": "2.x.x"
   },
   "keywords": [
     "json",
