@@ -1,6 +1,7 @@
 REPORTER = spec
 test:
 	@echo TRAVIS_JOB_ID $(TRAVIS_JOB_ID)
+	@$(MAKE) lint
 	@$(MAKE) test-coveralls
 lint:
 	./node_modules/.bin/jshint ./test ./index.js
