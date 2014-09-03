@@ -2,8 +2,6 @@
 (function() {
   'use strict';
 
-  console.log(this);
-
   var jsonPromise = {};
   var root = this;
   var previous = root.jsonPromise || null;
@@ -58,4 +56,4 @@
     root.jsonPromise = previous;
     return jsonPromise;
   };
-}).call({});
+}).call(this);
