@@ -54,7 +54,6 @@ describe('parser.parse', function(){
     });
   });
 
-
   it('should not parse json data that is invalid', function(done){
     parser.parse(invalidString).then(function() {
       throw new Error('This test should have failed!');
@@ -98,7 +97,6 @@ describe('parser.stringify', function(){
       throw e;
     });
   });
-
 
   it('should not stringify json data that is invalid', function(done){
     parser.stringify(invalidString).then(function() {
