@@ -2,12 +2,10 @@
 
 var chai = chai || null;
 var parser;
-var expect = chai.expect;
 var jsonPromise = jsonPromise || null;
 var validString = validString || null;
 var validObject = validObject || null;
 var invalidString = invalidString || null;
-
 var isNode = (typeof exports !== 'undefined' && typeof module !== 'undefined' && module.exports);
 
 if (isNode) {
@@ -20,6 +18,7 @@ if (isNode) {
   parser = jsonPromise;
 }
 
+var expect = chai.expect;
 
 describe('parser.parse', function(){
   it('validObject should should be an object', function(done){
