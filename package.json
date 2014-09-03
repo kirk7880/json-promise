@@ -16,7 +16,8 @@
     "mocha-istanbul": "*",
     "coveralls": "*",
     "mocha-lcov-reporter": "*",
-    "jshint": "2.x.x"
+    "jshint": "2.x.x",
+    "chai": "*"
   },
   "keywords": [
     "json",

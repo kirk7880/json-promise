@@ -1,9 +1,8 @@
 /* jshint unused:false */
-(function() {
+(function(root) {
   'use strict';
 
   var jsonPromise = {};
-  var root = this;
   var previous = root.jsonPromise || null;
 
   var isNode = (typeof require !== 'undefined' && typeof module !== 'undefined' && module.exports);
@@ -45,7 +44,7 @@
 
     exports.jsonPromise = jsonPromise;
   } else if (isAMD) {
-    define([], function() {
+    define(function() {
       return jsonPromise;
     });
   } else {
@@ -56,4 +55,4 @@
     root.jsonPromise = previous;
     return jsonPromise;
   };
-}).call(this);
+})(this);

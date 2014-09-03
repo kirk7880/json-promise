@@ -4,27 +4,28 @@ var parser = require('../index');
 var validObject = require(__dirname + '/fixtures/valid-object');
 var validString = require(__dirname + '/fixtures/valid-string');
 var invalidString = require(__dirname + '/fixtures/invalid-string');
-var assert = require("assert");
+var chai = require('chai');
+var expect = chai.expect;
 
 describe('parser.stringify', function(){
   it('validObject should should be an object', function(done){
-    assert.equal(typeof {}, typeof validObject);
+    expect(typeof validObject).to.equal(typeof {});
     done();
   });
 
   it('validString should should be a string', function(done){
-    assert.equal(typeof "", typeof validString);
+    expect(typeof validString).to.equal(typeof "");
     done();
   });
 
   it('invalid should should be a string', function(done){
-    assert.equal(typeof "", typeof invalidString);
+    expect(typeof validString).to.equal(typeof "");
     done();
   });
 
   it('should return JSON string from a JSON object', function(done){
     parser.stringify(validObject).then(function(data) {
-      assert.equal((typeof ""), typeof data);
+      expect(typeof data).to.equal(typeof "");
       done();
     }).catch(function(e) {
       throw e;
@@ -33,7 +34,7 @@ describe('parser.stringify', function(){
 
   it('should return JSON string that is already a JSON string', function(done){
     parser.stringify(validString).then(function(data) {
-      assert.equal((typeof ""), typeof data);
+      expect(typeof data).to.equal(typeof "");
       done();
     }).catch(function(e) {
       throw e;
@@ -45,7 +46,7 @@ describe('parser.stringify', function(){
     parser.stringify(invalidString).then(function() {
       throw new Error('This test should have failed!');
     }).catch(function(e) {
-      assert.equal(true, e instanceof Error);
+      expect(e instanceof Error).to.equal(true);
       done();
     });
   });
