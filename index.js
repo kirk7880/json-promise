@@ -6,6 +6,7 @@
   var jsonPromise = {};
 
   var isNode = (typeof require !== 'undefined' && typeof module !== 'undefined' && module.exports);
+
   var JSONPromise = null;
 
   if (isNode) {
@@ -35,7 +36,7 @@
   };
 
   if (typeof exports !== 'undefined') {
-    if (typeof module !== 'undefined' && module.exports) {
+    if (isNode) {
       exports = module.exports = jsonPromise;
     }
 
