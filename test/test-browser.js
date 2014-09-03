@@ -1,20 +1,23 @@
 'use strict';
 
-var chai = require('chai');
-var expect = chai.expect;
-var expect = chai.expect;
+var chai = chai || null;
 var parser;
-var jsonParser = jsonParser || null;
+var expect = chai.expect;
+var jsonPromise = jsonPromise || null;
+var validString = validString || null;
+var validObject = validObject || null;
+var invalidString = invalidString || null;
 
 var isNode = (typeof exports !== 'undefined' && typeof module !== 'undefined' && module.exports);
 
 if (isNode) {
-  var validObject = require(__dirname + '/fixtures/valid-object');
-  var validString = require(__dirname + '/fixtures/valid-string');
-  var invalidString = require(__dirname + '/fixtures/invalid-string');
+  validObject = require(__dirname + '/fixtures/valid-object');
+  validString = require(__dirname + '/fixtures/valid-string');
+  invalidString = require(__dirname + '/fixtures/invalid-string');
+  chai = require('chai');
   parser = require('../index');
 } else {
-  parser = jsonParser;
+  parser = jsonPromise;
 }
 
 
