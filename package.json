@@ -17,7 +17,8 @@
     "coveralls": "*",
     "mocha-lcov-reporter": "*",
     "jshint": "2.x.x",
-    "chai": "*"
+    "chai": "*",
+    "karma-mocha": "*"
   },
   "keywords": [
     "json",

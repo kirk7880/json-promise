@@ -1,5 +1,22 @@
+'use strict';
+
+var chai = require('chai');
 var expect = chai.expect;
-var parser = jsonPromise;
+var expect = chai.expect;
+var parser;
+var jsonParser = jsonParser || null;
+
+var isNode = (typeof exports !== 'undefined' && typeof module !== 'undefined' && module.exports);
+
+if (isNode) {
+  var validObject = require(__dirname + '/fixtures/valid-object');
+  var validString = require(__dirname + '/fixtures/valid-string');
+  var invalidString = require(__dirname + '/fixtures/invalid-string');
+  parser = require('../index');
+} else {
+  parser = jsonParser;
+}
+
 
 describe('parser.parse', function(){
   it('validObject should should be an object', function(done){
