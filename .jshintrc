@@ -73,7 +73,7 @@
     "wsh"           : false,    // Windows Scripting Host
     "yui"           : false,    // Yahoo User Interface
 
-    "predef": [ "it", "describe", "Promise" ],
+    "predef": [ "it", "describe", "Promise", "define"],
 
     // Custom Globals
     "globals"       : {}        // additional predefined global variables
