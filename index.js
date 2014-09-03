@@ -1,11 +1,15 @@
 /* jshint unused:false */
 (function() {
   'use strict';
+
+  console.log(this);
+
+  var jsonPromise = {};
   var root = this;
   var previous = root.jsonPromise || null;
-  var jsonPromise = {};
 
   var isNode = (typeof require !== 'undefined' && typeof module !== 'undefined' && module.exports);
+  var isAMD = (typeof define !== 'undefined' && define.amd);
 
   var JSONPromise = null;
 
@@ -37,10 +41,15 @@
 
   if (typeof exports !== 'undefined') {
     if (isNode) {
-      return module.exports = jsonPromise;
+      module.exports = jsonPromise;
+      return;
     } 
 
     exports.jsonPromise = jsonPromise;
+  } else if (isAMD) {
+    define([], function() {
+      return jsonPromise;
+    });
   } else {
     root.jsonPromise = jsonPromise;
   }
@@ -49,4 +58,4 @@
     root.jsonPromise = previous;
     return jsonPromise;
   };
-}).call(this);
+}).call({});
