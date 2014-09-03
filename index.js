@@ -37,10 +37,11 @@
 
   if (typeof exports !== 'undefined') {
     if (isNode) {
-      exports = module.exports = jsonPromise;
-    }
+      return module.exports = jsonPromise;
+    } 
 
     exports.jsonPromise = jsonPromise;
+    
   } else {
     root.jsonPromise = jsonPromise;
   }
