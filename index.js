@@ -41,7 +41,6 @@
     } 
 
     exports.jsonPromise = jsonPromise;
-    
   } else {
     root.jsonPromise = jsonPromise;
   }
